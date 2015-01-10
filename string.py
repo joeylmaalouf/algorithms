@@ -5,7 +5,7 @@ import sys
 
 # CLEAN ------------------------------------------------------------------------
 def clean(string):
-    """ Returns a string with all punctuation replaced with spaces.
+    """ Replaces all punctuation in a string with spaces.
     """
     translation = string.maketrans(
         "!#$%&()*+,-.:;<=>?@[]^_`{|}~'\\/\"",
