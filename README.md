@@ -1,4 +1,4 @@
 algorithms
 ==========
 
-A Python package of my algorithm implementations.
+A Python3 package of my algorithm implementations.
