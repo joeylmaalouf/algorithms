@@ -1,18 +1,19 @@
 # IMPORT -----------------------------------------------------------------------
+import string
 import sys
 # ------------------------------------------------------------------------------
 
 
 # CLEAN ------------------------------------------------------------------------
-def clean(string):
+def clean(s):
     """ Replaces all punctuation in a string with spaces,
         then trims down any extra spaces in a row.
     """
     translation = string.maketrans(
         "!#$%&()*+,-.:;<=>?@[]^_`{|}~'\\/\"",
         "                                ")
-    string = string.translate(translation)
-    return " ".join(string.split())
+    s = string.translate(s, translation)
+    return " ".join(s.split())
 # ------------------------------------------------------------------------------
 
 
@@ -29,7 +30,7 @@ def main(argv):
     string = "The fox & the c@ jumped over the big + lazy dog! Oh, no."
     print(string)
     print(clean(string))
-    print(base_chars(5))
+    print(base_chars(13))
 
 
 if __name__ == "__main__":
