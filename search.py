@@ -8,10 +8,10 @@ import time
 # BINARY -----------------------------------------------------------------------
 def binary(valuelist, searchval):
     """ Search valuelist for searchval, narrowing
-    the region of interest by half with every probe.
-    Does require the list to be sorted.
-    Time complexity: best O(log(n)), worst O(log(n)), average O(log(n)).
-    Space complexity: O(1).
+        the region of interest by half with every probe.
+        Does require the list to be sorted.
+        Time complexity: best O(log(n)), worst O(log(n)), average O(log(n)).
+        Space complexity: O(1).
     """
 
     # Create the bounds; lower is inclusive, upper is exclusive.
@@ -38,10 +38,10 @@ def binary(valuelist, searchval):
 # LINEAR -----------------------------------------------------------------------
 def linear(valuelist, searchval):
     """ Search valuelist for searchval,
-    checking every index in order.
-    Does not require the list to be sorted.
-    Time complexity: best O(1), worst O(n), average O(n/2).
-    Space complexity: O(1).
+        checking every index in order.
+        Does not require the list to be sorted.
+        Time complexity: best O(1), worst O(n), average O(n/2).
+        Space complexity: O(1).
     """
 
     # Iterate through the list, probing repeatedly until we find it.

@@ -8,9 +8,9 @@ import time
 # BUBBLE -----------------------------------------------------------------------
 def bubble(input):
     """ Repeatedly iterate through, "bubbling" the smaller values up towards
-    the beginning of the list while the larger vales "sink" towards the end.
-    Time complexity: best O(n^2), worst O(n^2), average O(n^2).
-    Space complexity: O(1).
+        the beginning of the list while the larger vales "sink" towards the end.
+        Time complexity: best O(n^2), worst O(n^2), average O(n^2).
+        Space complexity: O(1).
     """
 
     for i in range(len(input)):
@@ -24,9 +24,9 @@ def bubble(input):
 # HEAP -------------------------------------------------------------------------
 def heap(input):
     """ Turn the list into a heap (a sorted binary tree), sorting them
-    as they get inserted, then transform the heap back into a list.
-    Time complexity: best O(n*log(n)), worst O(n*log(n)), average O(n*log(n)).
-    Space complexity: O(1).
+        as they get inserted, then transform the heap back into a list.
+        Time complexity: best O(n*log(n)), worst O(n*log(n)), average O(n*log(n)).
+        Space complexity: O(1).
     """
 
     for start in range((len(input)-2)//2, -1, -1):
@@ -56,9 +56,9 @@ def _sift_down(input, start, end):
 # INSERTION --------------------------------------------------------------------
 def insertion(input):
     """ For each value in the list, move it backwards until
-    the only values before it are smaller than it.
-    Time complexity: best O(n), worst O(n^2), average O(n^2).
-    Space complexity: O(1).
+        the only values before it are smaller than it.
+        Time complexity: best O(n), worst O(n^2), average O(n^2).
+        Space complexity: O(1).
     """
 
     for i in range(1, len(input)):
@@ -73,9 +73,9 @@ def insertion(input):
 # MERGE ------------------------------------------------------------------------
 def merge(input):
     """ Break the list into halves repeatedly until there are many groups
-    of two or one, sort those, and put them back together sorted.
-    Time complexity: best O(n*log(n)), worst O(n*log(n)), average O(n*log(n)).
-    Space complexity: O(n).
+        of two or one, sort those, and put them back together sorted.
+        Time complexity: best O(n*log(n)), worst O(n*log(n)), average O(n*log(n)).
+        Space complexity: O(n).
     """
 
     # Split the list in two and recursively sort the two halves.
@@ -108,9 +108,9 @@ def merge(input):
 # SELECTION --------------------------------------------------------------------
 def selection(input):
     """ Like insertion sort, but only swaps the necessary values,
-    rather than every value between the moving ones.
-    Time complexity: best O(n^2), worst O(n^2), average O(n^2).
-    Space complexity: O(1).
+        rather than every value between the moving ones.
+        Time complexity: best O(n^2), worst O(n^2), average O(n^2).
+        Space complexity: O(1).
     """
 
     for i in range(len(input)):
@@ -126,10 +126,10 @@ def selection(input):
 # QUICK ------------------------------------------------------------------------
 def quick(input):
     """ Like merge sort, it partitions the data and puts it back
-    together again. However, merge sort sorts the data when putting
-    it back together; quick sort sorts the data when partitioning it.
-    Time complexity: best O(n*log(n)), worst O(n^2), average O(n*log(n)).
-    Space complexity: O(n).
+        together again. However, merge sort sorts the data when putting
+        it back together; quick sort sorts the data when partitioning it.
+        Time complexity: best O(n*log(n)), worst O(n^2), average O(n*log(n)).
+        Space complexity: O(n).
     """
 
     return _quick(input, 0, len(input)-1)
